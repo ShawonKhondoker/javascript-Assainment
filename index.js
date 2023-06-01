@@ -94,7 +94,17 @@ function publicBusFare(passengerCount) {
   
  // console.log(isBestFriend(abul)); // true
 // console.log(isBestFriend(babul)); // false
-  
 
-  
+
+
+function isBestFriend(abul1, babul2) {
+  return abul1.bestFriend === babul2 && babul2.bestFriend === abul1;
+}
+
+var abul1 = { bestFriend: babul2 };
+var babul2 = { bestFriend: abul1 };
+
+
+console.log(isBestFriend(abul1, babul2)); // false
+
 
